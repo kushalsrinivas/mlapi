@@ -29,7 +29,6 @@ def read_root():
 # Prediction endpoint
 @app.post("/predict/")
 def predict(data: InputData):
-    # Convert the input data into a pandas DataFrame
     input_df = pd.DataFrame([data.dict().values()], columns=data.dict().keys())
 
     # Make prediction
