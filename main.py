@@ -11,7 +11,6 @@ with open("crop_detection_model.pkl", "rb") as file:
     model = pickle.load(file)
 
 
-# Define input data model using Pydantic
 
 
 # Root endpoint
